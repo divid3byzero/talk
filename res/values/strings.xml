@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">talk</string>
+    <string name="username">Enter username&#8230;</string>
+    <string name="not_registered">You have not yet registered with the server. Please specify a username.</string>
+    <string name="send_button">Send</string>
+    <string name="action_search">Active users</string>
+	<string name="active_users_headline">Currently active users:</string>
+	<string name="private_chat_headline">Privater chat</string>
+</resources>

@@ -1,0 +1,55 @@
+<de.imut.oop.talk.android.view.PrivateChatView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eee6" >
+
+    <TextView
+        android:id="@+id/private_chat_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/private_chat_headline"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/private_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/text_private_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/text_private_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp" />
+
+            <Button
+                android:id="@+id/send_private_button"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/send_button" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/private_chats"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/text_private_enter" />
+    </RelativeLayout>
+
+</de.imut.oop.talk.android.view.PrivateChatView>

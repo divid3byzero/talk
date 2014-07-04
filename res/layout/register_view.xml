@@ -1,0 +1,62 @@
+<de.imut.oop.talk.android.view.UserNameView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eee6" >
+
+    <RelativeLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/logo_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/main_logo" />
+
+        <TextView
+            android:id="@+id/not_registered_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_box"
+            android:layout_marginTop="150dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollHorizontally="false"
+            android:text="@string/not_registered"
+            android:textColor="#a9412f" />
+
+        <LinearLayout
+            android:id="@+id/user_name_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/not_registered_notice"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/user_name_box"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="textCapSentences" >
+            </EditText>
+
+            <Button
+                android:id="@+id/send_user_name"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/send_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</de.imut.oop.talk.android.view.UserNameView>

@@ -1,0 +1,34 @@
+<de.imut.oop.talk.android.view.ListActiveUsersView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eee6" >
+    
+    <RelativeLayout
+        android:id="@+id/active_users_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+        >
+
+    <TextView
+        android:id="@+id/active_user_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/active_users_headline"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/active_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/active_user_headline"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+    
+    </RelativeLayout>
+
+</de.imut.oop.talk.android.view.ListActiveUsersView>
